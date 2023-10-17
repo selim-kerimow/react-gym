@@ -27,3 +27,9 @@ body {
 ::-webkit-scrollbar{
   display: none;
 }
+
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+}
