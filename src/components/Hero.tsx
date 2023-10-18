@@ -1,7 +1,13 @@
+import { ImHeart } from 'react-icons/im'
 
 // css
 import '../css/hero.css'
 import Navbar from './Navbar'
+
+// assets 
+import hero_image from '../assets/hero_image.png'
+import hero_image_back from '../assets/hero_image_back.png'
+import calories from '../assets/calories.png'
 
 
 const Hero: React.FC = () => {
@@ -43,7 +49,20 @@ const Hero: React.FC = () => {
 
 
             <div className="hero-right">
-                Right side
+                <button>Join Now</button>
+                <div className='right-rate'>
+                    <ImHeart color={'crimson'} size={35}/>
+                    <span className='rate-gray'>Heart Rate</span><span>130 bpm</span>
+                </div>
+                <img src={hero_image} alt="Hero" className='hero-image' />
+                <img src={hero_image_back} alt='hero-background' className='hero-image-back'/>
+                <div className='calories'>
+                    <img src={calories} alt="calories" className='calories-image'/>
+                    <div>
+                        <p className='rate-gray'>Calories burned</p>
+                        <span>220 kcal</span>
+                    </div>
+                </div>
             </div>
         </div>
     )

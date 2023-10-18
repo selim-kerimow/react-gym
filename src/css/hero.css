@@ -103,3 +103,78 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+.hero-right {
+    position: relative;
+}
+
+.hero-right button {
+    position: absolute;
+    padding: 7px 12px;
+    top: 25px;
+    right: 50px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.right-rate {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #363d42;
+    color: white;
+    padding: 20px;
+    top: 120px;
+    left: 220px;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    gap: 5px;
+
+}
+
+.rate-gray {
+    color: darkgray;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.hero-image {
+    position: absolute;
+    width: 450px;
+    top: 150px;
+    right: 250px;
+    z-index: 2;
+}
+
+.hero-image-back {
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    right: 500px;
+    top: 80px;
+}
+
+.calories {
+    position: absolute;
+    bottom: 150px;
+    right: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.calories-image {
+    height: 80px;
+
+}
+.calories div {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    font-size: 1.5rem;
+}
