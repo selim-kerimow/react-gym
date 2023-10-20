@@ -1,0 +1,25 @@
+.element {
+    width: 350px;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.element h1 {
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.join-now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.element:hover {
+    background-color: crimson;
+}

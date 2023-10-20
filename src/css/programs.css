@@ -1,0 +1,23 @@
+.programs {
+    height: 60vh;
+}
+.programs-header {
+    font-size: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+}
+
+.program-element {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
