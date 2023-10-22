@@ -2,6 +2,7 @@
 // components
 import Hero from "./components/Hero"
 import Programs from "./components/Programms"
+import WhyUs from "./components/WhyUs"
 
 
 const  App: React.FC = () => {
@@ -10,6 +11,7 @@ const  App: React.FC = () => {
     <div className="app">
       <Hero />
       <Programs />
+      <WhyUs />
     </div>
     
   )
