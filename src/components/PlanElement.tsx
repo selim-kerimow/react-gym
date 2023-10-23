@@ -17,18 +17,12 @@ const PlanElement: React.FC<PlanElementProps> = ({ item }) => {
             <h1 className='plan-price'>$ {item.price}</h1>
 
             <ul className='plans-list'>
-                <li>
-                    <img className='plans-tick' src={tick} alt="tick" />
-                    <p>5 hour of excercises</p>
-                </li>
-                <li>
-                    <img className='plans-tick' src={tick} alt="tick" />
-                    <p>Free consultation of coaches</p>
-                </li>
-                <li>
-                    <img className='plans-tick' src={tick} alt="tick" />
-                    <p>Access to minibar</p>
-                </li>
+                { item.description?.map(li => 
+                    <li>
+                        <img className='plans-tick' src={tick} alt="tick" />
+                        <p>{li}</p>
+                    </li>                    
+                    )}
             </ul>
 
             <button className='plans-button'>Join now</button>
