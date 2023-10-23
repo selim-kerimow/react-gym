@@ -1,0 +1,88 @@
+.testimonials {
+    display: flex;
+    padding: 0 2rem;
+    height: auto;
+    min-height: 60vh;
+}
+
+
+/*  left side */
+.testimonials-left {
+    flex: 1 1;
+    font-weight: bold;
+    line-height: 35px;
+    color: white;
+    font-size: 3rem;
+}
+.testimonials-left>:nth-child(1){
+    font-size: 1rem;
+    color: crimson;
+}
+.testimonials-left>:nth-child(4) {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+.testimonials-author {
+    font-size: 1rem;
+}
+.testimonials-author>:nth-child(1) {
+    color: crimson;
+}
+
+/* ----------------------------- */
+
+
+/* right side */
+.testimonials-right {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.testimonials-right img {
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    top: 2rem;
+    /* right: 15rem; */
+    object-fit: cover;
+}
+
+.testimonials-right>:nth-child(1) {
+    position: absolute;
+    top: 1rem;
+    margin-right: 20px;
+    border: 2px solid crimson;
+    width: 17rem;
+    height: 19rem;
+}
+
+.testimonials-right>:nth-child(2) {
+    position: absolute;
+    top: 2.8rem;
+    margin-left: 20px;
+    width: 17rem;
+    height: 19rem;
+    background-color: crimson;
+}
+
+.arrows {
+    display: flex;
+    position: absolute;
+    bottom: 130px;
+    left: 190px;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.arrows>:nth-child(1)>:hover {
+    color: crimson;
+    cursor: pointer;
+}
+.arrows>:nth-child(2)>:hover {
+    color: crimson;
+    cursor: pointer;
+}
