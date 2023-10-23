@@ -1,0 +1,40 @@
+.planElement {
+    padding: 20px;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    width: 320px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan-price {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.plans-list {
+    list-style: none;
+    padding: 0;
+}
+
+.plans-list li {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.plans-tick {
+    height: 28px;
+}
+
+.plans-button {
+    padding: 8px 0;
+    font-size: 0.95rem;
+}
+
+.premium {
+    height: 530px;
+    background-color: crimson;
+}
