@@ -1,6 +1,7 @@
 
 // components
 import Hero from "./components/Hero"
+import Join from "./components/Join"
 import Plans from "./components/Plans"
 import Programs from "./components/Programms"
 import Testimonials from "./components/Testimonials"
@@ -16,6 +17,7 @@ const  App: React.FC = () => {
       <WhyUs />
       <Plans />
       <Testimonials />
+      <Join />
     </div>
     
   )

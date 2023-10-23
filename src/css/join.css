@@ -1,0 +1,116 @@
+.join {
+    display: flex;
+    padding: 0 2rem;
+    height: auto;
+    min-height: 30vh;
+    align-items: center;
+}
+
+.join-line {
+    width: 20%;
+    background-color: crimson;
+    height: 4px;
+}
+
+.join-left {
+    width: 50%;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.join-left div {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.join-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.join-wrapper {
+    background-color: rgb(156, 151, 151);
+    padding: 15px 40px;
+    display: flex;
+    gap: 30px;
+    border-radius: 5px;
+}
+
+.join-right input {
+    height: 40px;
+    border: none;
+    width: 250px;
+    border-radius: 5px;
+    text-indent: 10px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.join-right button {
+    height: 40px;
+    background-color: crimson;
+    padding: 0 1.15rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width: 1170px) {
+    .join {
+        display: flex;
+        flex-direction: column;
+    }
+    .join-left {
+        width: auto;
+    }
+    .join-right {
+        width: auto;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+    .join-wrapper {
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 675px) {
+
+    .join {
+        padding: 0.5rem;
+        padding: 0 auto;
+    }
+    .join-left {
+        width: auto;
+        font-size: 2rem;
+    }
+    .join-right {
+        width: 95%;
+    }
+    .join-wrapper {
+        gap: 10px;
+        padding: 10px 20px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .join {
+        width: 95%;
+    }
+    .join-left {
+        font-size: 1.5rem;
+        width: auto;
+    }
+    .join-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .join-wrapper input {
+        font-size: 0.75rem;
+    }
+}
