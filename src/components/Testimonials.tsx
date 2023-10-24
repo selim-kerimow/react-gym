@@ -1,5 +1,6 @@
 import '../css/testimonial.css'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 // assets 
 import t1 from '../assets/t-image1.png'
@@ -65,16 +66,36 @@ const Testimonials: React.FC = () => {
                 <p>TESTIMONIALS</p>
                 <p className='stroke-text'>WHAT THEY</p>
                 <p>SAY ABOUT US</p>
-                <p> {testimonial_data[selected].review} </p>
-                <div className='testimonials-author'>
-                    <span>{ testimonial_data[selected].name } </span> <span>- { testimonial_data[selected].status }</span>
-                </div>
+                <motion.p
+                    initial={{ opacity: 0, x: -100}}
+                    animate={{ opacity: 1, x: 0}}
+                    exit={{ opacity: 0, x: 100 }}
+                    transition={{ duration: 3, type: 'spring' }}
+                    key={selected} 
+                > 
+                    {testimonial_data[selected].review} 
+                    <div className='testimonials-author'>
+                        <span>{ testimonial_data[selected].name } </span> <span>- { testimonial_data[selected].status }</span>
+                    </div>
+                </motion.p>
             </div>
+            
 
             <div className='testimonials-right' >
-                <div></div>
-                <div></div>
-                <img src={testimonial_data[selected].image} alt="" />
+
+                <motion.div initial={{ opacity: 1, x: -100 }} transition={{ duration: 2, type: 'spring'}} whileInView={{opacity: 1, x: 0}}></motion.div>
+                <motion.div initial={{ opacity: 1, x: 100 }} transition={{ duration: 2, type: 'spring'}} whileInView={{opacity: 1, x: 0}}></motion.div>
+                
+                <motion.img
+                    initial={{ opacity: 0, x: 100}}
+                    animate={{ opacity: 1, x: 0}}
+                    exit={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 3, type: 'spring' }}
+                    key={selected} 
+                    src={testimonial_data[selected].image} 
+                    alt="author" 
+                />
+                
                 <div className='arrows'>
                     <FaArrowLeft size={30} onClick={downTestimonial}/> 
                     <FaArrowRight size={31.9} onClick={upTestimonial}/>                 

@@ -1,6 +1,5 @@
 import { ImHeart } from 'react-icons/im'
-
-// css
+import { motion } from 'framer-motion'
 import '../css/hero.css'
 import Navbar from './Navbar'
 
@@ -12,7 +11,6 @@ import calories from '../assets/calories.png'
 
 const Hero: React.FC = () => {
 
-
     return (
         <div className="hero">
 
@@ -20,7 +18,12 @@ const Hero: React.FC = () => {
                 <Navbar />
                 <div className='hero-best'>
                     <span>The best fitness club in Ashgabat!</span>
-                    <div></div>
+                    <motion.div 
+                        initial={{left: '300px'}} 
+                        whileInView={{ left: '8px'}} 
+                        transition={{duration: 3, type: 'tween'}}
+                    >
+                    </motion.div>
                 </div>
                 <div className='hero-text'>
                     <div><span className='stroke-text'>SHAPE</span><span>YOUR</span></div>
@@ -50,19 +53,35 @@ const Hero: React.FC = () => {
 
             <div className="hero-right">
                 <button>Join Now</button>
-                <div className='right-rate'>
+
+                <motion.div className='right-rate' initial={{ right: '1rem'}} whileInView={{right: '4rem'}} transition={{ duration: 1, type: 'tween'}}>
                     <ImHeart color={'crimson'} size={35}/>
                     <span className='rate-gray'>Heart Rate</span><span>130 bpm</span>
-                </div>
+                </motion.div>
+
                 <img src={hero_image} alt="Hero" className='hero-image' />
-                <img src={hero_image_back} alt='hero-background' className='hero-image-back'/>
-                <div className='calories'>
+                <motion.img 
+                    transition={{duration: 3, type: 'spring'}}
+                    whileInView={{ right: '32rem'}}
+                    initial={{ right: '11rem'}}
+                    src={hero_image_back} 
+                    alt='hero-background' 
+                    className='hero-image-back'
+                />
+
+                <motion.div 
+                    className='calories' 
+                    initial={{right: '20rem'}} 
+                    whileInView={{right: '45rem'}} 
+                    transition={{duration: 3, type: 'spring'}}
+                    >
                     <img src={calories} alt="calories" className='calories-image'/>
                     <div>
                         <p className='rate-gray'>Calories burned</p>
                         <span>220 kcal</span>
                     </div>
-                </div>
+                </motion.div>
+
             </div>
         </div>
     )
