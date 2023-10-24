@@ -1,5 +1,6 @@
 
 // components
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Join from "./components/Join"
 import Plans from "./components/Plans"
@@ -18,6 +19,7 @@ const  App: React.FC = () => {
       <Plans />
       <Testimonials />
       <Join />
+      <Footer />
     </div>
     
   )
