@@ -1,12 +1,6 @@
-import { ImHeart } from 'react-icons/im'
 import { motion } from 'framer-motion'
 import '../css/hero.css'
 import Navbar from './Navbar'
-
-// assets 
-import hero_image from '../assets/hero_image.png'
-import hero_image_back from '../assets/hero_image_back.png'
-import calories from '../assets/calories.png'
 
 
 const Hero: React.FC = () => {
@@ -52,36 +46,7 @@ const Hero: React.FC = () => {
 
 
             <div className="hero-right">
-                <button>Join Now</button>
-
-                <motion.div className='right-rate' initial={{ right: '1rem'}} whileInView={{right: '4rem'}} transition={{ duration: 1, type: 'tween'}}>
-                    <ImHeart color={'crimson'} size={35}/>
-                    <span className='rate-gray'>Heart Rate</span><span>130 bpm</span>
-                </motion.div>
-
-                <img src={hero_image} alt="Hero" className='hero-image' />
-                <motion.img 
-                    transition={{duration: 3, type: 'spring'}}
-                    whileInView={{ right: '32rem'}}
-                    initial={{ right: '11rem'}}
-                    src={hero_image_back} 
-                    alt='hero-background' 
-                    className='hero-image-back'
-                />
-
-                <motion.div 
-                    className='calories' 
-                    initial={{right: '20rem'}} 
-                    whileInView={{right: '45rem'}} 
-                    transition={{duration: 3, type: 'spring'}}
-                    >
-                    <img src={calories} alt="calories" className='calories-image'/>
-                    <div>
-                        <p className='rate-gray'>Calories burned</p>
-                        <span>220 kcal</span>
-                    </div>
-                </motion.div>
-
+                
             </div>
         </div>
     )

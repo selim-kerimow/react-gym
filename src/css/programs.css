@@ -1,5 +1,8 @@
 .programs {
-    height: 60vh;
+    height: auto;
+    min-height: 60vh;
+    width: 95%;
+    margin: 0 auto;
 }
 .programs-header {
     font-size: 3rem;
@@ -21,5 +24,31 @@
     gap: 30px;
     margin: 0 auto;
     margin-top: 40px;
+}
 
+
+@media screen and (max-width: 1400px) {
+    .programs-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .programs {
+        width: 90%;
+    }
+    .programs-header {
+        font-size: 2rem;
+        line-height: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .programs-header {
+        font-size: 1.7rem;
+        line-height: 12px;
+    }
 }
