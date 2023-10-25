@@ -165,3 +165,20 @@
         font-size: 0.9rem;
     }
 }
+
+
+@media screen and (max-width: 355px) {
+    .why-left {
+        display: flex;
+        flex-direction: column;
+    }
+    .why-left>:nth-child(1) {
+        display: none;
+    }
+    .reasons-title2 {
+        font-size: 2rem;
+    }
+    .reasons-list li{
+        font-size: 0.8rem;
+    }
+}

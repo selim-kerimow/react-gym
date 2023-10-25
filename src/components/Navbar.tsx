@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
             <h1>Fitness Club</h1>
 
             <div className='navbar-hamburger' onClick={() => setHamburger(true)}>
-                <GiHamburgerMenu color='white' size={32}/>
+                <GiHamburgerMenu color='white' size={25}/>
             </div>
 
             <nav className={`navbar-nav ${ hamburger ? 'show' : ''}`} >

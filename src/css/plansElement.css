@@ -38,3 +38,18 @@
     height: 530px;
     background-color: crimson;
 }
+
+@media screen and (max-width: 355px) {
+    .planElement {
+        width: 220px;
+    }
+    .plan-price {
+        font-size: 2rem;
+    }
+    .plans-list li {
+        font-size: 0.9rem;
+    }
+    .plans-list li {
+        gap: 10px;
+    }
+}

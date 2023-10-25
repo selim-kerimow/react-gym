@@ -114,3 +114,18 @@
         font-size: 0.75rem;
     }
 }
+
+
+@media screen and (max-width: 355px) {
+    .join-left {
+        font-size: 1.4rem;
+    }
+
+    .join-left div {
+        gap: 5px;
+    }
+    .join-wrapper{
+        padding: 0;
+        background-color: var(--appcolor);
+    }
+}

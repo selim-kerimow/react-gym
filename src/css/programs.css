@@ -53,3 +53,11 @@
         line-height: 12px;
     }
 }
+
+
+@media screen and (max-width: 355px) {
+    .programs-header {
+        font-size: 1.5rem;
+        line-height: 5px;
+    }
+}

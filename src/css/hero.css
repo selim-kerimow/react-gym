@@ -6,7 +6,7 @@
 }
 
 .hero-left {
-    flex: 3;
+    width: 100%;
 }
 
 .hero-best {
@@ -126,5 +126,45 @@
     .hero-statistic p {
         margin-top: 5px;
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .hero  {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .hero-best {
+        margin: 30px 0;
+        font-size: 0.7rem;
+    }
+    .hero-text {
+        margin: 0;
+        margin-left: 10px;
+    }
+    .hero-text span {
+        font-size: 2.1rem;
+    }
+    .hero-pargraph {
+        font-size: 1rem;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .hero-statistic {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .hero-statistic p {
+        font-size: 0.8rem;
+    }
+    .hero-buttons {
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-height: 1000px) {
+    .hero {
+        height: 65vh;
     }
 }

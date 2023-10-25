@@ -55,3 +55,20 @@
         z-index: 99;
     }
 }
+
+
+@media screen and (max-width: 355px) {
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+    .navbar-hamburger {
+        top: 15px;
+        right: 15px;
+    }
+    .hamburger-icon {
+        size: 32px;
+    }
+    .navbar-nav {
+        font-size: 0.9rem;
+    }
+}

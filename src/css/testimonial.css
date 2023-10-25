@@ -109,3 +109,20 @@
         margin: 20px 0;
     }
 }
+
+@media screen and (max-width: 355px) {
+    .testimonials-right img {
+        width: 14rem;
+        height: 16rem;
+    }
+    
+    .testimonials-right>:nth-child(1) {
+        width: 14rem;
+        height: 16rem;
+    }
+    
+    .testimonials-right>:nth-child(2) {
+        width: 14rem;
+        height: 16rem;
+    }
+}
