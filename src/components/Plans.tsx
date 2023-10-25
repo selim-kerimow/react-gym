@@ -44,7 +44,7 @@ const plans_data: Plans[] = [
 const Plans: React.FC = () => {
 
     return (
-        <div className='plans'>
+        <div className='plans' id='plans'>
             <h1 className='plans-header'>
                 <span className='stroke-text'>READY TO START</span>
                 <span>YOUR JOURNEY</span>

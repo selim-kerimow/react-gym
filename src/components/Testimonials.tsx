@@ -61,7 +61,7 @@ const Testimonials: React.FC = () => {
     }
 
     return (
-        <div className='testimonials'>
+        <div className='testimonials' id='testimonials'>
             <div className='testimonials-left'>
                 <span>TESTIMONIALS</span>
                 <p className='stroke-text'>WHAT THEY</p>

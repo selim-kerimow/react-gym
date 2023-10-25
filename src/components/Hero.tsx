@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 const Hero: React.FC = () => {
 
     return (
-        <div className="hero">
+        <div className="hero" id='home'>
 
             <div className="hero-left">
                 <Navbar />

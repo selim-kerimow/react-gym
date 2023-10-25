@@ -22,7 +22,7 @@ const WhyUs: React.FC = () => {
 
 
     return (
-        <div className="why">
+        <div className="why" id='why-us'>
 
             <div className="why-left">
                 <img src={image1} />
