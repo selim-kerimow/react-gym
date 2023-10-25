@@ -5,7 +5,7 @@ const Join: React.FC = () => {
 
 
     return (
-        <div className='join'>
+        <div className='join' id='join-now'>
 
             <div className='join-left'>
                 <div className='join-line'></div>

@@ -1,6 +1,7 @@
 import '../css/plansElement.css'
 import tick from '../assets/tick.png'
 import { Plans } from './Plans'
+import { Link } from 'react-scroll'
 
 interface PlanElementProps {
     item: Plans
@@ -25,7 +26,9 @@ const PlanElement: React.FC<PlanElementProps> = ({ item }) => {
                     )}
             </ul>
 
-            <button className='plans-button'>Join now</button>
+            <Link to='join' span={true} smooth={true}>
+                <button className='plans-button'>Join now</button>
+            </Link>
         </div>
     )
 }

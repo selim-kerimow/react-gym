@@ -32,6 +32,9 @@
 .plans-button {
     padding: 8px 0;
     font-size: 0.95rem;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
 }
 
 .premium {
