@@ -9,11 +9,11 @@ const Hero: React.FC = () => {
         <div className="hero">
 
             <div className="hero-left">
-                <Navbar />
+                {/* <Navbar /> */}
                 <div className='hero-best'>
                     <span>The best fitness club in Ashgabat!</span>
                     <motion.div 
-                        initial={{left: '300px'}} 
+                        initial={{left: '200px'}} 
                         whileInView={{ left: '8px'}} 
                         transition={{duration: 3, type: 'tween'}}
                     >

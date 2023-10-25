@@ -63,7 +63,7 @@ const Testimonials: React.FC = () => {
     return (
         <div className='testimonials'>
             <div className='testimonials-left'>
-                <p>TESTIMONIALS</p>
+                <span>TESTIMONIALS</span>
                 <p className='stroke-text'>WHAT THEY</p>
                 <p>SAY ABOUT US</p>
                 <motion.p

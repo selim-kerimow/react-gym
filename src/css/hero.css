@@ -98,3 +98,32 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 600px) {
+    .hero {
+        height: 80vh;
+    }
+    .hero-best {
+        font-size: 0.8rem;
+    }
+    .hero-text span {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .hero-text div {
+        margin-bottom: 5px;
+    }
+    .hero-statistic {
+        gap: 10px;
+        line-height: normal;
+    }
+    .hero-statistic h2 {
+        font-size: 1.6rem;
+        margin: 15px 0;
+    }
+    .hero-statistic p {
+        margin-top: 5px;
+        font-size: 0.9rem;
+    }
+}

@@ -40,6 +40,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    min-height: 400px;
 }
 
 .testimonials-right img {
@@ -47,7 +48,6 @@
     width: 17rem;
     height: 19rem;
     top: 2rem;
-    /* right: 15rem; */
     object-fit: cover;
 }
 
@@ -72,7 +72,7 @@
 .arrows {
     display: flex;
     position: absolute;
-    bottom: 130px;
+    bottom: 70px;
     left: 190px;
     gap: 10px;
     align-items: center;
@@ -86,4 +86,26 @@
 .arrows>:nth-child(2)>:hover {
     color: crimson;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 775px) {
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .arrows {
+        align-self: center;
+        bottom: 0px;
+        left: 40%;
+    }
+    .testimonials-left {
+        font-size: 2rem;
+    }
+    .testimonials-left p {
+        margin: 20px 0;
+    }
 }
