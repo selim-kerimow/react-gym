@@ -18,3 +18,40 @@
     color: crimson;
 }
 
+.navbar-hamburger {
+    display: none;
+}
+
+.show {
+    display: none;
+    right: 25px;
+    top: 25px;
+    background-color: rgb(53, 52, 52);
+    line-height: 8px;
+    padding: 25px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+
+@media screen and (max-width: 830px) {
+    .navbar-nav {
+        display: none;
+        position: absolute;
+    }
+    .show {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+    }
+    .navbar-hamburger {
+        display: flex;
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        background-color: rgb(53, 52, 52);
+        padding: 12px;
+        border-radius: 5px;
+        z-index: 99;
+    }
+}

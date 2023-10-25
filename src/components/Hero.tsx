@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
         <div className="hero">
 
             <div className="hero-left">
-                {/* <Navbar /> */}
+                <Navbar />
                 <div className='hero-best'>
                     <span>The best fitness club in Ashgabat!</span>
                     <motion.div 

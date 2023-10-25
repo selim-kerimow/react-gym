@@ -11,8 +11,10 @@ import WhyUs from "./components/WhyUs"
 
 const  App: React.FC = () => {
 
+
   return (
     <div className="app">
+
       <Hero />
       <Programs />
       <WhyUs />
