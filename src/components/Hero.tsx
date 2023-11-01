@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
                     <div><span className='stroke-text'>SHAPE</span><span>YOUR</span></div>
                     <div><span>IDEAL</span><span>BODY</span></div>
                 </div>
-                <p className='hero-pargraph'>In here we will help you to shape and build your ideal body and live up your life to fullest </p>
+                <p className='hero-pargraph'>In here we will help you to shape, build your ideal body and live up your life to fullest </p>
                 <div className='hero-statistic'>
                     <div>
                         <h2>+ 140</h2>
@@ -31,11 +31,11 @@ const Hero: React.FC = () => {
                     </div>
                     <div>
                         <h2>+ 978</h2>
-                        <p>MEMEBERS JOINED</p>
+                        <p>MEMBERS JOINED</p>
                     </div>
                     <div>
                         <h2>+ 50</h2>
-                        <p>FITNESS PROGRAMMS</p>
+                        <p>FITNESS PROGRAMS</p>
                     </div>
                 </div>
                 <div className='hero-buttons'>
